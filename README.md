@@ -27,10 +27,10 @@ There are many guides online so I will keep this short. The code I generally use
 As an example, I included the code I used to collect all the data from Interpares ITrust AI, an interdisciplinary project aiming to leverage Artificial Intelligence to support the availability of public records.
 
 To use:
-- 1. Create a config file with 'init_config.py'
-- 2. In the config file there are options for filtering and avoiding urls in your website of choice.
-- 3. Select main content body with search_contents and adding a dictionary with keys such as "tag", "class", and "style". By default it will find all popular elements such as h1, h2, p, and li.
-- 4. Run with python scrape.py --config_file config/your_config.json
+1. Create a config file with 'init_config.py'
+2. In the config file there are options for filtering and avoiding urls in your website of choice.
+3. Select main content body with search_contents and adding a dictionary with keys such as "tag", "class", and "style". By default it will find all popular elements such as h1, h2, p, and li.
+4. Run with python scrape.py --config_file config/your_config.json
 
 ### Query generation
 
