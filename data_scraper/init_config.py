@@ -5,7 +5,7 @@ def create_config_file(filename):
     """Creates a JSON configuration file with default settings."""
     config = {
         'filename': filename,
-        'module_name': '',
+        'module_name': 'base_module',
         'save_interval': 100,
         'common_url': '',
         'avoid': [''],

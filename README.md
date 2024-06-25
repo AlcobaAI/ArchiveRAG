@@ -28,6 +28,10 @@ As an example, I included the code I used to collect all the data from Interpare
 
 To use:
 - 1. Create a config file with 'init_config.py'
+- 2. In the config file there are options for filtering and avoiding urls in your website of choice.
+- 3. Select main content body with search_contents and adding a dictionary with keys such as "tag", "class", and "style". By default it will find all popular elements such as h1, h2, p, and li.
+- 4. Run with python scrape.py --config_file config/your_config.json
+
 ### Query generation
 
 We generated queries using the [GPT-4o](https://chatgpt.com/?model=gpt-4o) model. These queries are instrumental for training the embedding model. Below is the prompt we used for generating queries in JSON format:
@@ -180,13 +184,13 @@ gradioapp.py has the following arguments:
 
 ### 1. **LangChain**
 LangChain is a versatile library designed to make building applications that integrate language models with other components, such as retrieval systems, more accessible. It supports various applications, from chatbots to complex reasoning tasks.
-- **GitHub Repository**: [LangChain](https://github.com/langchain/langchain)
+- **GitHub Repository**: [LangChain](https://github.com/langchain-ai/langchain)
 - **Documentation**: [LangChain Docs](https://docs.langchain.com/)
 
 ### 2. **LLaMA_Index**
 LLaMA_Index integrates retrieval systems directly with LLaMA models, providing efficient and scalable solutions for information retrieval combined with generative models.
-- **GitHub Repository**: [LLaMA_Index](https://github.com/facebookresearch/llama_index)
-- **Documentation**: [Read the Docs](https://llama-index.readthedocs.io/)
+- **GitHub Repository**: [LLaMA_Index](https://github.com/run-llama/llama_index)
+- **Documentation**: [Read the Docs](https://docs.llamaindex.ai/en/stable/)
 
 ### 3. **Haystack**
 Haystack is an end-to-end framework for building search systems that scale. It allows developers to plug in different components for document storage, retrieval, and question answering systems, perfect for pairing with LLMs.
@@ -196,11 +200,11 @@ Haystack is an end-to-end framework for building search systems that scale. It a
 ### 4. **FAISS**
 FAISS (Facebook AI Similarity Search) is an efficient similarity search and clustering of dense vectors. It is particularly useful for creating custom retrieval systems to augment the capabilities of language models.
 - **GitHub Repository**: [FAISS](https://github.com/facebookresearch/faiss)
-- **Documentation**: [FAISS Wiki](https://github.com/facebookresearch/faiss/wiki)
+- **Website**: [FAISS Wiki](https://ai.meta.com/tools/faiss/)
 
 ### 5. **OpenAI’s Retrieval Augmented Generation**
 OpenAI offers a RAG feature that leverages retrieval capabilities alongside their powerful language models. This approach allows developers to enrich the responses of the model by retrieving and referencing relevant documents.
-- **Documentation**: [OpenAI API Docs](https://platform.openai.com/docs/guides/retrieval)
+- **Documentation**: [OpenAI API Docs](https://platform.openai.com/docs/overview)
 
 ### 6. **Gradio**
 Gradio makes it easy to create custom UI components for machine learning models. It allows users to quickly build and share demos that include features like inputs for text, images, and outputs like labels, texts, images, etc. Gradio is particularly user-friendly for rapid prototyping and sharing your LLM models with retrieval capabilities.

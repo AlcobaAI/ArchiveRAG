@@ -1,12 +1,17 @@
 {
     "filename": "ip1",
     "module_name": "interpares1",
-    "class_name": "IP1Scraper",
-    "save_interval": 50,
+    "save_interval": 100,
     "common_url": "http://www.interpares.org/",
-    "content_tag": "body",
-    "content_class": "",
-    "urls": [],
+    "filter": [
+        ""
+    ],
+    "search_contents": [
+        {
+            "tag": "body"
+        }
+    ],
+    "urls": ["http://www.interpares.org/sitemap.cfm?proj=ip1"],
     "avoid": [
         "login",
         ".pdf"
@@ -14,43 +19,5 @@
     "filter": [
         "ip1"
     ],
-    "seen": [
-        "http://www.interpares.org/sitemap.cfm?proj=ip1",
-        "http://www.interpares.org/ip1/ip1_index.cfm",
-        "http://www.interpares.org/ip1/ip1_management.cfm",
-        "http://www.interpares.org/ip1/ip1_co-investigators.cfm",
-        "http://www.interpares.org/ip1/ip1_gra.cfm",
-        "http://www.interpares.org/ip1/ip1_funding.cfm",
-        "http://www.interpares.org/ip1/ip1_contact.cfm",
-        "http://www.interpares.org/ip1/ip1_goals&methodologies.cfm",
-        "http://www.interpares.org/ip1/ip1_atf.cfm",
-        "http://www.interpares.org/ip1/ip1_aptf.cfm",
-        "http://www.interpares.org/ip1/ip1_ptf.cfm",
-        "http://www.interpares.org/ip1/ip1_stf.cfm",
-        "http://www.interpares.org/ip1/ip1_documents.cfm",
-        "http://www.interpares.org/ip1/ip1_dissemination.cfm?proj=ip1",
-        "http://www.interpares.org/ip1/ip1_websites.cfm?type=2",
-        "http://www.interpares.org/../ip1/ip1_contact.cfm",
-        "http://www.interpares.org/ip1/ip1_co-investigators.cfm#iteam",
-        "http://www.interpares.org/ip1/ip1_documents.cfm?cat=atf",
-        "http://www.interpares.org/ip1/ip1_documents.cfm?cat=aptf",
-        "http://www.interpares.org/ip1/ip1_documents.cfm?cat=ptf",
-        "http://www.interpares.org/ip1/ip1_documents.cfm?cat=stf",
-        "http://www.interpares.org/ip1/ip1_documents.cfm?cat=gtf",
-        "http://www.interpares.org/ip1/ip1_documents.cfm?cat=gen",
-        "http://www.interpares.org/../ip1/ip1_dissemination.cfm?proj=ip1&cat=pu-bks",
-        "http://www.interpares.org/../ip1/ip1_dissemination.cfm?proj=ip1&cat=pu-atcl-r",
-        "http://www.interpares.org/../ip1/ip1_dissemination.cfm?proj=ip1&cat=pu-atcl-nr",
-        "http://www.interpares.org/../ip1/ip1_dissemination.cfm?proj=ip1&cat=pu-cp-r",
-        "http://www.interpares.org/../ip1/ip1_dissemination.cfm?proj=ip1&cat=pu-cp-nr",
-        "http://www.interpares.org/../ip1/ip1_dissemination.cfm?proj=ip1&cat=pl-lws",
-        "http://www.interpares.org/../ip1/ip1_dissemination.cfm?proj=ip1&cat=pl-conf",
-        "http://www.interpares.org/../ip1/ip1_dissemination.cfm?proj=ip1&cat=pr-atcl-i",
-        "http://www.interpares.org/../ip1/ip1_dissemination.cfm?proj=ip1&cat=pr-bi",
-        "http://www.interpares.org/../ip1/ip1_dissemination.cfm?proj=ip1&cat=pr-o",
-        "http://www.interpares.org/../ip1/ip1_dissemination.cfm?proj=ip1&cat=pr-s",
-        "http://www.interpares.org/../ip1/ip1_dissemination.cfm?proj=ip1&cat=o-grt",
-        "http://www.interpares.org/../ip1/ip1_dissemination.cfm?proj=ip1&cat=o-rpt",
-        "http://www.interpares.org/../ip1/ip1_dissemination.cfm?proj=ip1&cat=o-scc"
-    ]
+    "seen": []
 }

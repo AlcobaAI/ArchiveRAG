@@ -6,8 +6,8 @@ import warnings
 warnings.filterwarnings("ignore")
 
 def request_url(url):
-    sleep_time = randint(3,5)
-    sleep(sleep_time)
+    #sleep_time = randint(3,5)
+    #sleep(sleep_time)
     return requests.get(url, impersonate="chrome110", verify=False, timeout=300).content
 
 def get_soup(url):
