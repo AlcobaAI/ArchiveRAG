@@ -12,9 +12,9 @@ from langchain.chains.question_answering import load_qa_chain
 
 
 class ChatPDF:
-    def __init__(self, model: str, embedding_model_path: str):
+    def __init__(self, model: str, embedding_model: str):
         self.model = ChatOllama(model=model)
-        self.embedding_function = HuggingFaceEmbeddings(model_name=embedding_model_path)
+        self.embedding_function = HuggingFaceEmbeddings(model_name=embedding_model)
         self.text_splitter = RecursiveCharacterTextSplitter(chunk_size=2000, chunk_overlap=30)
         self.vector_store = None
         self.chain = None

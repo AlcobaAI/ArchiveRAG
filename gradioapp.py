@@ -21,7 +21,7 @@ def upload_file(files: list, assistant: ChatPDF) -> str:
 def main():
     parser = argparse.ArgumentParser(description="Run ITrust AI Chatbot with specified models and paths")
     parser.add_argument('--model', type=str, default="llama3", help="Model name to use")
-    parser.add_argument('--embedding_model', type=str, required=True, help="Path to the embedding model")
+    parser.add_argument('--embedding_model', default="mixedbread-ai/mxbai-embed-large-v1", type=str, required=True, help="Path to the embedding model")
     parser.add_argument('--data_path', type=str, default="pdfs/", help="Path to the PDF data directory")
 
     args = parser.parse_args()
